@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAF7F59E204F589C00D85504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F59D204F589C00D85504 /* AppDelegate.swift */; };
+		AAF7F5A0204F589C00D85504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F59F204F589C00D85504 /* ViewController.swift */; };
+		AAF7F5A3204F589C00D85504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A1204F589C00D85504 /* Main.storyboard */; };
+		AAF7F5A5204F589C00D85504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A4204F589C00D85504 /* Assets.xcassets */; };
+		AAF7F5A8204F589C00D85504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */; };
+		AAF7F5B3204F589C00D85504 /* Crescendo_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F5B2204F589C00D85504 /* Crescendo_iOSTests.swift */; };
+		AAF7F5BE204F589C00D85504 /* Crescendo_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F5BD204F589C00D85504 /* Crescendo_iOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAF7F5AF204F589C00D85504 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF7F592204F589C00D85504 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7F599204F589C00D85504;
+			remoteInfo = Crescendo_iOS;
+		};
+		AAF7F5BA204F589C00D85504 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AAF7F592204F589C00D85504 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AAF7F599204F589C00D85504;
+			remoteInfo = Crescendo_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AAF7F59A204F589C00D85504 /* Crescendo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crescendo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF7F59D204F589C00D85504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAF7F59F204F589C00D85504 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AAF7F5A2204F589C00D85504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AAF7F5A4204F589C00D85504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAF7F5A7204F589C00D85504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAF7F5A9204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF7F5AE204F589C00D85504 /* Crescendo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crescendo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF7F5B2204F589C00D85504 /* Crescendo_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crescendo_iOSTests.swift; sourceTree = "<group>"; };
+		AAF7F5B4204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF7F5B9204F589C00D85504 /* Crescendo_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crescendo_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF7F5BD204F589C00D85504 /* Crescendo_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crescendo_iOSUITests.swift; sourceTree = "<group>"; };
+		AAF7F5BF204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF7F597204F589C00D85504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5AB204F589C00D85504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5B6204F589C00D85504 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAF7F591204F589C00D85504 = {
+			isa = PBXGroup;
+			children = (
+				AAF7F59C204F589C00D85504 /* Crescendo_iOS */,
+				AAF7F5B1204F589C00D85504 /* Crescendo_iOSTests */,
+				AAF7F5BC204F589C00D85504 /* Crescendo_iOSUITests */,
+				AAF7F59B204F589C00D85504 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF7F59B204F589C00D85504 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7F59A204F589C00D85504 /* Crescendo_iOS.app */,
+				AAF7F5AE204F589C00D85504 /* Crescendo_iOSTests.xctest */,
+				AAF7F5B9204F589C00D85504 /* Crescendo_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF7F59C204F589C00D85504 /* Crescendo_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7F59D204F589C00D85504 /* AppDelegate.swift */,
+				AAF7F59F204F589C00D85504 /* ViewController.swift */,
+				AAF7F5A1204F589C00D85504 /* Main.storyboard */,
+				AAF7F5A4204F589C00D85504 /* Assets.xcassets */,
+				AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */,
+				AAF7F5A9204F589C00D85504 /* Info.plist */,
+			);
+			path = Crescendo_iOS;
+			sourceTree = "<group>";
+		};
+		AAF7F5B1204F589C00D85504 /* Crescendo_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7F5B2204F589C00D85504 /* Crescendo_iOSTests.swift */,
+				AAF7F5B4204F589C00D85504 /* Info.plist */,
+			);
+			path = Crescendo_iOSTests;
+			sourceTree = "<group>";
+		};
+		AAF7F5BC204F589C00D85504 /* Crescendo_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AAF7F5BD204F589C00D85504 /* Crescendo_iOSUITests.swift */,
+				AAF7F5BF204F589C00D85504 /* Info.plist */,
+			);
+			path = Crescendo_iOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF7F599204F589C00D85504 /* Crescendo_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF7F5C2204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOS" */;
+			buildPhases = (
+				AAF7F596204F589C00D85504 /* Sources */,
+				AAF7F597204F589C00D85504 /* Frameworks */,
+				AAF7F598204F589C00D85504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crescendo_iOS;
+			productName = Crescendo_iOS;
+			productReference = AAF7F59A204F589C00D85504 /* Crescendo_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AAF7F5AD204F589C00D85504 /* Crescendo_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF7F5C5204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSTests" */;
+			buildPhases = (
+				AAF7F5AA204F589C00D85504 /* Sources */,
+				AAF7F5AB204F589C00D85504 /* Frameworks */,
+				AAF7F5AC204F589C00D85504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF7F5B0204F589C00D85504 /* PBXTargetDependency */,
+			);
+			name = Crescendo_iOSTests;
+			productName = Crescendo_iOSTests;
+			productReference = AAF7F5AE204F589C00D85504 /* Crescendo_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AAF7F5B8204F589C00D85504 /* Crescendo_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF7F5C8204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSUITests" */;
+			buildPhases = (
+				AAF7F5B5204F589C00D85504 /* Sources */,
+				AAF7F5B6204F589C00D85504 /* Frameworks */,
+				AAF7F5B7204F589C00D85504 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AAF7F5BB204F589C00D85504 /* PBXTargetDependency */,
+			);
+			name = Crescendo_iOSUITests;
+			productName = Crescendo_iOSUITests;
+			productReference = AAF7F5B9204F589C00D85504 /* Crescendo_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF7F592204F589C00D85504 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Andrew Stears";
+				TargetAttributes = {
+					AAF7F599204F589C00D85504 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					AAF7F5AD204F589C00D85504 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AAF7F599204F589C00D85504;
+					};
+					AAF7F5B8204F589C00D85504 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AAF7F599204F589C00D85504;
+					};
+				};
+			};
+			buildConfigurationList = AAF7F595204F589C00D85504 /* Build configuration list for PBXProject "Crescendo_iOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAF7F591204F589C00D85504;
+			productRefGroup = AAF7F59B204F589C00D85504 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF7F599204F589C00D85504 /* Crescendo_iOS */,
+				AAF7F5AD204F589C00D85504 /* Crescendo_iOSTests */,
+				AAF7F5B8204F589C00D85504 /* Crescendo_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF7F598204F589C00D85504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF7F5A8204F589C00D85504 /* LaunchScreen.storyboard in Resources */,
+				AAF7F5A5204F589C00D85504 /* Assets.xcassets in Resources */,
+				AAF7F5A3204F589C00D85504 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5AC204F589C00D85504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5B7204F589C00D85504 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF7F596204F589C00D85504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF7F5A0204F589C00D85504 /* ViewController.swift in Sources */,
+				AAF7F59E204F589C00D85504 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5AA204F589C00D85504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF7F5B3204F589C00D85504 /* Crescendo_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAF7F5B5204F589C00D85504 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF7F5BE204F589C00D85504 /* Crescendo_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AAF7F5B0204F589C00D85504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7F599204F589C00D85504 /* Crescendo_iOS */;
+			targetProxy = AAF7F5AF204F589C00D85504 /* PBXContainerItemProxy */;
+		};
+		AAF7F5BB204F589C00D85504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AAF7F599204F589C00D85504 /* Crescendo_iOS */;
+			targetProxy = AAF7F5BA204F589C00D85504 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AAF7F5A1204F589C00D85504 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF7F5A2204F589C00D85504 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF7F5A7204F589C00D85504 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAF7F5C0204F589C00D85504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAF7F5C1204F589C00D85504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAF7F5C3204F589C00D85504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAF7F5C4204F589C00D85504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AAF7F5C6204F589C00D85504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crescendo_iOS.app/Crescendo_iOS";
+			};
+			name = Debug;
+		};
+		AAF7F5C7204F589C00D85504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crescendo_iOS.app/Crescendo_iOS";
+			};
+			name = Release;
+		};
+		AAF7F5C9204F589C00D85504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crescendo_iOS;
+			};
+			name = Debug;
+		};
+		AAF7F5CA204F589C00D85504 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Crescendo_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crescendo_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF7F595204F589C00D85504 /* Build configuration list for PBXProject "Crescendo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF7F5C0204F589C00D85504 /* Debug */,
+				AAF7F5C1204F589C00D85504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF7F5C2204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF7F5C3204F589C00D85504 /* Debug */,
+				AAF7F5C4204F589C00D85504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF7F5C5204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF7F5C6204F589C00D85504 /* Debug */,
+				AAF7F5C7204F589C00D85504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF7F5C8204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF7F5C9204F589C00D85504 /* Debug */,
+				AAF7F5CA204F589C00D85504 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF7F592204F589C00D85504 /* Project object */;
+}
