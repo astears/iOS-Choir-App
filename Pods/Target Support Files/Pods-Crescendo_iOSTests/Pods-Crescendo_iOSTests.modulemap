@@ -1,0 +1,6 @@
+framework module Pods_Crescendo_iOSTests {
+  umbrella header "Pods-Crescendo_iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

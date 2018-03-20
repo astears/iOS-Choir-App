@@ -1,0 +1,6 @@
+framework module Pods_Crescendo_iOS {
+  umbrella header "Pods-Crescendo_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

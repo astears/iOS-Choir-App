@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AAF7F59E204F589C00D85504 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F59D204F589C00D85504 /* AppDelegate.swift */; };
-		AAF7F5A0204F589C00D85504 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F59F204F589C00D85504 /* ViewController.swift */; };
-		AAF7F5A3204F589C00D85504 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A1204F589C00D85504 /* Main.storyboard */; };
-		AAF7F5A5204F589C00D85504 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A4204F589C00D85504 /* Assets.xcassets */; };
-		AAF7F5A8204F589C00D85504 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */; };
+		4EA7A7992665476ED14E7618 /* Pods_Crescendo_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD0D1EED03BD5A611CA90A /* Pods_Crescendo_iOSTests.framework */; };
+		7E4CEB2E7D8A76FC49F0560A /* Pods_Crescendo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */; };
+		AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = AA7DD7BD2054AE3A00F2C3CC /* Songs */; };
+		AAA012D620563BBD001319C3 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AAA012D520563BBD001319C3 /* Audio */; };
+		AAE55B8B20566B520030067D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B8A20566B520030067D /* Main.storyboard */; };
+		AAE55B8E20566BDB0030067D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55B8D20566BDB0030067D /* Message.swift */; };
+		AAE55B9220566C350030067D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55B9120566C340030067D /* AppDelegate.swift */; };
+		AAE55B9420566C3E0030067D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B9320566C3E0030067D /* GoogleService-Info.plist */; };
+		AAE55B9620566C4B0030067D /* HelperExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55B9520566C4B0030067D /* HelperExtensions.swift */; };
+		AAE55B9820566C540030067D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B9720566C540030067D /* LaunchScreen.storyboard */; };
+		AAE55B9A20566C6D0030067D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B9920566C6D0030067D /* Assets.xcassets */; };
+		AAE55B9D20566DFE0030067D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B9C20566DFE0030067D /* Info.plist */; };
+		AAE55BA1205670230030067D /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55BA0205670230030067D /* ChatController.swift */; };
+		AAE55BA3205670280030067D /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55BA2205670270030067D /* HomeController.swift */; };
+		AAE55BA52056702C0030067D /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55BA42056702C0030067D /* SongViewController.swift */; };
+		AAE55BA72056702F0030067D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55BA62056702F0030067D /* ViewController.swift */; };
 		AAF7F5B3204F589C00D85504 /* Crescendo_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F5B2204F589C00D85504 /* Crescendo_iOSTests.swift */; };
 		AAF7F5BE204F589C00D85504 /* Crescendo_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF7F5BD204F589C00D85504 /* Crescendo_iOSUITests.swift */; };
+		FF0F8DF6E0DE15BF8A6DCA73 /* Pods_Crescendo_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06373A7DD800B78D8A2C0317 /* Pods_Crescendo_iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +46,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06373A7DD800B78D8A2C0317 /* Pods_Crescendo_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crescendo_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15ACF648F73F0F42F2AC2A20 /* Pods-Crescendo_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1D84B19D0991F30A414FC806 /* Pods-Crescendo_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52D01633FC57161EF867A918 /* Pods-Crescendo_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSUITests/Pods-Crescendo_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		68175F2A9FC97B08D3FA9B1F /* Pods-Crescendo_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AA7DD7BD2054AE3A00F2C3CC /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
+		AAA012D520563BBD001319C3 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		AAE55B8A20566B520030067D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		AAE55B8C20566BDA0030067D /* Crescendo_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crescendo_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAE55B8D20566BDB0030067D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		AAE55B9120566C340030067D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAE55B9320566C3E0030067D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAE55B9520566C4B0030067D /* HelperExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperExtensions.swift; sourceTree = "<group>"; };
+		AAE55B9720566C540030067D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAE55B9920566C6D0030067D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAE55B9C20566DFE0030067D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAE55BA0205670230030067D /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		AAE55BA2205670270030067D /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		AAE55BA42056702C0030067D /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		AAE55BA62056702F0030067D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAF7F59A204F589C00D85504 /* Crescendo_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crescendo_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAF7F59D204F589C00D85504 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AAF7F59F204F589C00D85504 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AAF7F5A2204F589C00D85504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAF7F5A4204F589C00D85504 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AAF7F5A7204F589C00D85504 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AAF7F5A9204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF7F5AE204F589C00D85504 /* Crescendo_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crescendo_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF7F5B2204F589C00D85504 /* Crescendo_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crescendo_iOSTests.swift; sourceTree = "<group>"; };
 		AAF7F5B4204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAF7F5B9204F589C00D85504 /* Crescendo_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Crescendo_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF7F5BD204F589C00D85504 /* Crescendo_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crescendo_iOSUITests.swift; sourceTree = "<group>"; };
 		AAF7F5BF204F589C00D85504 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crescendo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DE170417A774885EC3D7DE /* Pods-Crescendo_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSUITests/Pods-Crescendo_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F8AD0D1EED03BD5A611CA90A /* Pods_Crescendo_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crescendo_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4CEB2E7D8A76FC49F0560A /* Pods_Crescendo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EA7A7992665476ED14E7618 /* Pods_Crescendo_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +100,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF0F8DF6E0DE15BF8A6DCA73 /* Pods_Crescendo_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DE33057D85751596975F4E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15ACF648F73F0F42F2AC2A20 /* Pods-Crescendo_iOS.debug.xcconfig */,
+				86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */,
+				1D84B19D0991F30A414FC806 /* Pods-Crescendo_iOSTests.debug.xcconfig */,
+				68175F2A9FC97B08D3FA9B1F /* Pods-Crescendo_iOSTests.release.xcconfig */,
+				F6DE170417A774885EC3D7DE /* Pods-Crescendo_iOSUITests.debug.xcconfig */,
+				52D01633FC57161EF867A918 /* Pods-Crescendo_iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAE55B9E20566E480030067D /* Crescendo_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				AAE55B9F205670180030067D /* Controllers */,
+				AAE55B9120566C340030067D /* AppDelegate.swift */,
+				AAE55B9320566C3E0030067D /* GoogleService-Info.plist */,
+				AAE55B8A20566B520030067D /* Main.storyboard */,
+				AAE55B9520566C4B0030067D /* HelperExtensions.swift */,
+				AAE55B9720566C540030067D /* LaunchScreen.storyboard */,
+				AAE55B8D20566BDB0030067D /* Message.swift */,
+				AAE55B9920566C6D0030067D /* Assets.xcassets */,
+				AAE55B9C20566DFE0030067D /* Info.plist */,
+			);
+			name = Crescendo_iOS;
+			sourceTree = "<group>";
+		};
+		AAE55B9F205670180030067D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAE55BA0205670230030067D /* ChatController.swift */,
+				AAE55BA62056702F0030067D /* ViewController.swift */,
+				AAE55BA42056702C0030067D /* SongViewController.swift */,
+				AAE55BA2205670270030067D /* HomeController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		AAF7F591204F589C00D85504 = {
 			isa = PBXGroup;
 			children = (
-				AAF7F59C204F589C00D85504 /* Crescendo_iOS */,
+				AAE55B9E20566E480030067D /* Crescendo_iOS */,
+				AAA012D520563BBD001319C3 /* Audio */,
+				AA7DD7BD2054AE3A00F2C3CC /* Songs */,
 				AAF7F5B1204F589C00D85504 /* Crescendo_iOSTests */,
 				AAF7F5BC204F589C00D85504 /* Crescendo_iOSUITests */,
 				AAF7F59B204F589C00D85504 /* Products */,
+				3DE33057D85751596975F4E6 /* Pods */,
+				E00BE6A16C11850E21802ECC /* Frameworks */,
+				AAE55B8C20566BDA0030067D /* Crescendo_iOS-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,19 +170,6 @@
 				AAF7F5B9204F589C00D85504 /* Crescendo_iOSUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		AAF7F59C204F589C00D85504 /* Crescendo_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				AAF7F59D204F589C00D85504 /* AppDelegate.swift */,
-				AAF7F59F204F589C00D85504 /* ViewController.swift */,
-				AAF7F5A1204F589C00D85504 /* Main.storyboard */,
-				AAF7F5A4204F589C00D85504 /* Assets.xcassets */,
-				AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */,
-				AAF7F5A9204F589C00D85504 /* Info.plist */,
-			);
-			path = Crescendo_iOS;
 			sourceTree = "<group>";
 		};
 		AAF7F5B1204F589C00D85504 /* Crescendo_iOSTests */ = {
@@ -125,6 +190,16 @@
 			path = Crescendo_iOSUITests;
 			sourceTree = "<group>";
 		};
+		E00BE6A16C11850E21802ECC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */,
+				F8AD0D1EED03BD5A611CA90A /* Pods_Crescendo_iOSTests.framework */,
+				06373A7DD800B78D8A2C0317 /* Pods_Crescendo_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF7F5C2204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOS" */;
 			buildPhases = (
+				D9AE5D51FF860161B5A75C5A /* [CP] Check Pods Manifest.lock */,
 				AAF7F596204F589C00D85504 /* Sources */,
 				AAF7F597204F589C00D85504 /* Frameworks */,
 				AAF7F598204F589C00D85504 /* Resources */,
+				EAF296A02DE76BE06A4302D8 /* [CP] Embed Pods Frameworks */,
+				316B1DD0F163BD37B5DC416B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF7F5C5204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSTests" */;
 			buildPhases = (
+				48C903B83CB9CD281690A7B0 /* [CP] Check Pods Manifest.lock */,
 				AAF7F5AA204F589C00D85504 /* Sources */,
 				AAF7F5AB204F589C00D85504 /* Frameworks */,
 				AAF7F5AC204F589C00D85504 /* Resources */,
+				01CC7E73BC06574ED47280D8 /* [CP] Embed Pods Frameworks */,
+				445E355F26FD2B35D0C4B134 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAF7F5C8204F589C00D85504 /* Build configuration list for PBXNativeTarget "Crescendo_iOSUITests" */;
 			buildPhases = (
+				0B478BA72B3A060B80AEA9E2 /* [CP] Check Pods Manifest.lock */,
 				AAF7F5B5204F589C00D85504 /* Sources */,
 				AAF7F5B6204F589C00D85504 /* Frameworks */,
 				AAF7F5B7204F589C00D85504 /* Resources */,
+				14D2B3D4B724D7B16826D3F7 /* [CP] Embed Pods Frameworks */,
+				02462B56417F339D80F61A21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +277,7 @@
 				TargetAttributes = {
 					AAF7F599204F589C00D85504 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					AAF7F5AD204F589C00D85504 = {
@@ -232,9 +317,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF7F5A8204F589C00D85504 /* LaunchScreen.storyboard in Resources */,
-				AAF7F5A5204F589C00D85504 /* Assets.xcassets in Resources */,
-				AAF7F5A3204F589C00D85504 /* Main.storyboard in Resources */,
+				AAE55B9D20566DFE0030067D /* Info.plist in Resources */,
+				AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */,
+				AAA012D620563BBD001319C3 /* Audio in Resources */,
+				AAE55B9A20566C6D0030067D /* Assets.xcassets in Resources */,
+				AAE55B9820566C540030067D /* LaunchScreen.storyboard in Resources */,
+				AAE55B8B20566B520030067D /* Main.storyboard in Resources */,
+				AAE55B9420566C3E0030067D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +343,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01CC7E73BC06574ED47280D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		02462B56417F339D80F61A21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOSUITests/Pods-Crescendo_iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B478BA72B3A060B80AEA9E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crescendo_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14D2B3D4B724D7B16826D3F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOSUITests/Pods-Crescendo_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		316B1DD0F163BD37B5DC416B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		445E355F26FD2B35D0C4B134 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48C903B83CB9CD281690A7B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crescendo_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9AE5D51FF860161B5A75C5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crescendo_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF296A02DE76BE06A4302D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AAF7F596204F589C00D85504 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF7F5A0204F589C00D85504 /* ViewController.swift in Sources */,
-				AAF7F59E204F589C00D85504 /* AppDelegate.swift in Sources */,
+				AAE55B9220566C350030067D /* AppDelegate.swift in Sources */,
+				AAE55B9620566C4B0030067D /* HelperExtensions.swift in Sources */,
+				AAE55B8E20566BDB0030067D /* Message.swift in Sources */,
+				AAE55BA52056702C0030067D /* SongViewController.swift in Sources */,
+				AAE55BA72056702F0030067D /* ViewController.swift in Sources */,
+				AAE55BA1205670230030067D /* ChatController.swift in Sources */,
+				AAE55BA3205670280030067D /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,25 +544,6 @@
 			targetProxy = AAF7F5BA204F589C00D85504 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		AAF7F5A1204F589C00D85504 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAF7F5A2204F589C00D85504 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AAF7F5A6204F589C00D85504 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AAF7F5A7204F589C00D85504 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AAF7F5C0204F589C00D85504 /* Debug */ = {
@@ -424,13 +655,17 @@
 		};
 		AAF7F5C3204F589C00D85504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15ACF648F73F0F42F2AC2A20 /* Pods-Crescendo_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Crescendo_iOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crescendo_iOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,13 +673,16 @@
 		};
 		AAF7F5C4204F589C00D85504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Crescendo_iOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.calpoly.Crescendo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Crescendo_iOS-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +690,7 @@
 		};
 		AAF7F5C6204F589C00D85504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D84B19D0991F30A414FC806 /* Pods-Crescendo_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +707,7 @@
 		};
 		AAF7F5C7204F589C00D85504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68175F2A9FC97B08D3FA9B1F /* Pods-Crescendo_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +724,7 @@
 		};
 		AAF7F5C9204F589C00D85504 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6DE170417A774885EC3D7DE /* Pods-Crescendo_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +740,7 @@
 		};
 		AAF7F5CA204F589C00D85504 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D01633FC57161EF867A918 /* Pods-Crescendo_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
