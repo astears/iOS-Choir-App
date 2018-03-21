@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var accessCodeTextField: UITextField!
     
     @IBOutlet weak var segCtrl: UISegmentedControl!
     
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         LoginButton.backgroundColor = UIColor.gray
         passwordTextField.isSecureTextEntry = true
         nameTextField.isHidden = true
+        accessCodeTextField.isHidden = true
         
     }
     
@@ -45,9 +47,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         LoginButton.setTitle(segCtrl.titleForSegment(at: segCtrl.selectedSegmentIndex), for: .normal)
         if nameTextField.isHidden == true {
             nameTextField.isHidden = false
+            accessCodeTextField.isHidden = false
         }
         else {
             nameTextField.isHidden = true
+            accessCodeTextField.isHidden = true
         }
     }
     
@@ -80,6 +84,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print ("missing email, pass, or name")
             return
         }
+        
+        let code = accessCodeTextField.text!
 
         Auth.auth().createUser(withEmail: email, password: password) { (user: User?, error) in
             if error != nil {
@@ -95,7 +101,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
             let ref = Database.database().reference()
             let usersReference = ref.child("users").child(uid)
-            let values = ["name": name, "email": email]
+            let values = ["name": name, "email": email, "code" : code]
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
 
                 if let err = err {

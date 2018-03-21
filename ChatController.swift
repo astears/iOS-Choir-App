@@ -14,12 +14,26 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var ref = Database.database().reference()
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var chatTableView: UITableView!
+    @IBOutlet weak var postView: UIView!
     
     var posts = [Message]()
     var removedRow = 0
+    var hide = true
     
     // send msgs, post to DB
     override func viewDidLoad() {
+        postView.isHidden = true
+        let user = Auth.auth().currentUser!.uid
+        ref.child("users").child(user).observeSingleEvent(of: .value) { (snapshot) in
+            if let dictionary = snapshot.value as? [String : AnyObject] {
+                // change this to check role and hide textfield and button if necessary
+                let accessCode = dictionary["code"] as! String
+                if (accessCode == "SM_2018") {
+                    self.postView.isHidden = false
+                }
+            }
+        }
+        
         ref.child("Posts").observe(DataEventType.childAdded, with: { (snapshot) in
             if let dictionary = snapshot.value as? [String : AnyObject] {
                 

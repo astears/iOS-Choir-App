@@ -47,8 +47,8 @@
                                     <action selector="handleLoginRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oOq-8j-Zb0"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-M2-Kss">
-                                <rect key="frame" x="47" y="371" width="281" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oay-M2-Kss">
+                                <rect key="frame" x="47" y="371" width="128" height="30"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -68,6 +68,12 @@
                                     <action selector="handleLoginRegisterChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="dUC-wq-9k9"/>
                                 </connections>
                             </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Director Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CfD-Cg-e11">
+                                <rect key="frame" x="176" y="371" width="151" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -77,22 +83,26 @@
                             <constraint firstItem="FbK-oA-iVJ" firstAttribute="top" secondItem="Oay-M2-Kss" secondAttribute="bottom" constant="8" symbolic="YES" id="7TS-kK-nxl"/>
                             <constraint firstItem="Oay-M2-Kss" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="351" id="A9z-NE-Orl"/>
                             <constraint firstItem="UFf-8U-FAW" firstAttribute="trailing" secondItem="FbK-oA-iVJ" secondAttribute="trailing" id="IJa-8f-d6N"/>
+                            <constraint firstItem="CfD-Cg-e11" firstAttribute="baseline" secondItem="Oay-M2-Kss" secondAttribute="baseline" id="LCM-fx-GTr"/>
                             <constraint firstItem="Oay-M2-Kss" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Msc-4O-ipS"/>
                             <constraint firstItem="Lnd-WD-4Bf" firstAttribute="centerX" secondItem="FbK-oA-iVJ" secondAttribute="centerX" id="VYJ-1B-6tC"/>
-                            <constraint firstItem="FbK-oA-iVJ" firstAttribute="trailing" secondItem="Oay-M2-Kss" secondAttribute="trailing" id="a5l-Bi-b2F"/>
+                            <constraint firstItem="FbK-oA-iVJ" firstAttribute="trailing" secondItem="Oay-M2-Kss" secondAttribute="trailing" constant="153" id="a5l-Bi-b2F"/>
+                            <constraint firstItem="CfD-Cg-e11" firstAttribute="leading" secondItem="Oay-M2-Kss" secondAttribute="trailing" constant="1" id="afr-7M-js0"/>
                             <constraint firstItem="UFf-8U-FAW" firstAttribute="leading" secondItem="Lnd-WD-4Bf" secondAttribute="leading" id="d3B-aI-wA7"/>
                             <constraint firstItem="Oay-M2-Kss" firstAttribute="top" secondItem="xQ4-uy-Jom" secondAttribute="bottom" constant="24" id="gW1-u1-BlH"/>
-                            <constraint firstItem="Oay-M2-Kss" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nxR-qk-Nce"/>
+                            <constraint firstItem="Oay-M2-Kss" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-76.5" id="nxR-qk-Nce"/>
                             <constraint firstItem="xQ4-uy-Jom" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="299" id="pqZ-yt-wn5"/>
                             <constraint firstItem="UFf-8U-FAW" firstAttribute="top" secondItem="Lnd-WD-4Bf" secondAttribute="bottom" constant="8" symbolic="YES" id="puh-Aj-9SN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xQ4-uy-Jom" secondAttribute="trailing" constant="48" id="qg1-gg-hou"/>
                             <constraint firstItem="Lnd-WD-4Bf" firstAttribute="leading" secondItem="FbK-oA-iVJ" secondAttribute="leading" id="u79-Ou-nFe"/>
+                            <constraint firstItem="CfD-Cg-e11" firstAttribute="trailing" secondItem="xQ4-uy-Jom" secondAttribute="trailing" id="wtV-eJ-kGF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="LAF-xf-rkH"/>
                     <connections>
                         <outlet property="LoginButton" destination="UFf-8U-FAW" id="zW0-oJ-Ajd"/>
+                        <outlet property="accessCodeTextField" destination="CfD-Cg-e11" id="zfA-Ac-kd6"/>
                         <outlet property="emailTextField" destination="FbK-oA-iVJ" id="HfR-9B-zKn"/>
                         <outlet property="nameTextField" destination="Oay-M2-Kss" id="IvB-5i-ali"/>
                         <outlet property="passwordTextField" destination="Lnd-WD-4Bf" id="icw-9Q-gUu"/>
@@ -102,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6" y="34"/>
+            <point key="canvasLocation" x="-7.2000000000000002" y="33.733133433283363"/>
         </scene>
         <!--Songs-->
         <scene sceneID="lxu-ed-dH4">
@@ -337,6 +347,7 @@
                     <connections>
                         <outlet property="chatTableView" destination="mAI-XG-A1R" id="Nae-gE-iXe"/>
                         <outlet property="messageTextField" destination="xN5-A3-Uh6" id="Q2W-Fm-xaP"/>
+                        <outlet property="postView" destination="O1D-gj-K4M" id="cc0-Sk-2WX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oKK-5b-fTx" userLabel="First Responder" sceneMemberID="firstResponder"/>

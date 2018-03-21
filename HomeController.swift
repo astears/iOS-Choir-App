@@ -17,7 +17,8 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var selectedRow = 0
     
     override func viewDidLoad() {
-        print("in Home Controller!")
+        let user = Auth.auth().currentUser!.uid
+        print("Home user id is: \(user)")
         
         songPaths.sort()
         for song in songPaths {
