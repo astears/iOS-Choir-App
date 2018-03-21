@@ -228,6 +228,7 @@
                         <viewLayoutGuide key="safeArea" id="MS5-vn-9vj"/>
                     </view>
                     <connections>
+                        <outlet property="playAudioToolbar" destination="L5m-tc-m4I" id="0nT-Pr-vwa"/>
                         <outlet property="songView" destination="JmE-7T-deU" id="Csp-7J-BMd"/>
                     </connections>
                 </viewController>

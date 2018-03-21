@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4EA7A7992665476ED14E7618 /* Pods_Crescendo_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD0D1EED03BD5A611CA90A /* Pods_Crescendo_iOSTests.framework */; };
 		7E4CEB2E7D8A76FC49F0560A /* Pods_Crescendo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */; };
+		AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77CF7D2061BD2B008552F6 /* SongInfo.swift */; };
 		AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = AA7DD7BD2054AE3A00F2C3CC /* Songs */; };
 		AAA012D620563BBD001319C3 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AAA012D520563BBD001319C3 /* Audio */; };
 		AAE55B8B20566B520030067D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B8A20566B520030067D /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		52D01633FC57161EF867A918 /* Pods-Crescendo_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSUITests/Pods-Crescendo_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		68175F2A9FC97B08D3FA9B1F /* Pods-Crescendo_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AA77CF7D2061BD2B008552F6 /* SongInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfo.swift; sourceTree = "<group>"; };
 		AA7DD7BD2054AE3A00F2C3CC /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
 		AAA012D520563BBD001319C3 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		AAE55B8A20566B520030067D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				AAE55B8D20566BDB0030067D /* Message.swift */,
 				AAE55B9920566C6D0030067D /* Assets.xcassets */,
 				AAE55B9C20566DFE0030067D /* Info.plist */,
+				AA77CF7D2061BD2B008552F6 /* SongInfo.swift */,
 			);
 			name = Crescendo_iOS;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				AAE55B9620566C4B0030067D /* HelperExtensions.swift in Sources */,
 				AAE55B8E20566BDB0030067D /* Message.swift in Sources */,
 				AAE55BA52056702C0030067D /* SongViewController.swift in Sources */,
+				AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */,
 				AAE55BA72056702F0030067D /* ViewController.swift in Sources */,
 				AAE55BA1205670230030067D /* ChatController.swift in Sources */,
 				AAE55BA3205670280030067D /* HomeController.swift in Sources */,

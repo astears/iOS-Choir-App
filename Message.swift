@@ -10,8 +10,14 @@ import UIKit
 
 class Message: NSObject {
     var text : String?
+    var user : String?
+    var postID : String?
+    var timestamp: String?
     
-    init(text : String) {
+    init(_ text : String, _ user : String, _ postID : String, _ timestamp : String) {
         self.text = text
+        self.user = user
+        self.postID = postID
+        self.timestamp = timestamp
     }
 }

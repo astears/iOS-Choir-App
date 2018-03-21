@@ -12,7 +12,7 @@ import Firebase
 
 class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var songs = [String]()
+    var songs = [SongInfo]()
     var songPaths = Bundle.main.paths(forResourcesOfType: "pdf", inDirectory: "Songs")
     var selectedRow = 0
     
@@ -24,7 +24,7 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let url = URL(fileURLWithPath: song)
             var name = url.lastPathComponent
             name = stripFileExtension(name)
-            songs.append(name)
+            songs.append(SongInfo(name, false))
         }
     }
     
@@ -35,7 +35,7 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as UITableViewCell
         let cell = UITableViewCell(style: .default, reuseIdentifier: "songCell")
-        cell.textLabel?.text = songs[indexPath.row]
+        cell.textLabel?.text = songs[(indexPath.row)].title
         
         return cell
     }
@@ -49,6 +49,7 @@ class HomeController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if segue.identifier == "showSong" {
             let destVC = segue.destination as? SongViewController
             destVC?.songPath = songPaths[selectedRow]
+            destVC?.songTitle = songs[selectedRow].title
             
         }
     }
