@@ -54,7 +54,7 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alert = UIAlertController(title: "My Alert", message: "This is an action sheet.", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "", message: "Select one.", preferredStyle: .actionSheet)
         let firstAction = UIAlertAction(title: "Check In!", style: .default) { (alert: UIAlertAction!) -> Void in
             
             let key = self.dates[indexPath.row]
@@ -71,7 +71,7 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
                     
                     //negative means minutes late
                     if (lat == String(self.latitude!) && lon == String(self.longitude!)) {
-                        checkTime(timeDifference)
+                        checkTime(timeDifference, key)
                     }
                     else {
                         print("out of range")
@@ -83,18 +83,24 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
             
         }
         
-        func checkTime(_ timeDifference : Int) {
+        func checkTime(_ timeDifference : Int, _ key : String) {
+            let userID = Auth.auth().currentUser!.uid
             if (timeDifference >= -10 && timeDifference <= 10) {
                 //between 10 mins early and 10 mins late you can check in normal
                 print("normal")
+                let values = ["status" : "present"]
+                self.ref.child("Rehearsals").child(key).child("Attendance").child(userID).updateChildValues(values)
+                
             }
             else if (timeDifference > 10) {
                 // check in closed.. too early
                 print("too early")
             }
-            else if (timeDifference < -10 && timeDifference >= -60) {
+            else if (timeDifference < -10 && timeDifference >= -30) {
                 // late
                 print("late")
+                let values = ["status" : "late"]
+                self.ref.child("Rehearsals").child(key).child("Attendance").child(userID).updateChildValues(values)
             }
             else {
                 // check in closed.. too late
