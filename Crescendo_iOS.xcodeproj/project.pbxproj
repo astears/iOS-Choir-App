@@ -12,6 +12,8 @@
 		AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77CF7D2061BD2B008552F6 /* SongInfo.swift */; };
 		AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = AA7DD7BD2054AE3A00F2C3CC /* Songs */; };
 		AAA012D620563BBD001319C3 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AAA012D520563BBD001319C3 /* Audio */; };
+		AABCE38A20631243003755EA /* AttendanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCE38920631243003755EA /* AttendanceController.swift */; };
+		AABCE38C206323B5003755EA /* AddRehearsalModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCE38B206323B5003755EA /* AddRehearsalModal.swift */; };
 		AAE55B8B20566B520030067D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAE55B8A20566B520030067D /* Main.storyboard */; };
 		AAE55B8E20566BDB0030067D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55B8D20566BDB0030067D /* Message.swift */; };
 		AAE55B9220566C350030067D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE55B9120566C340030067D /* AppDelegate.swift */; };
@@ -56,6 +58,8 @@
 		AA77CF7D2061BD2B008552F6 /* SongInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfo.swift; sourceTree = "<group>"; };
 		AA7DD7BD2054AE3A00F2C3CC /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
 		AAA012D520563BBD001319C3 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
+		AABCE38920631243003755EA /* AttendanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceController.swift; sourceTree = "<group>"; };
+		AABCE38B206323B5003755EA /* AddRehearsalModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRehearsalModal.swift; sourceTree = "<group>"; };
 		AAE55B8A20566B520030067D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AAE55B8C20566BDA0030067D /* Crescendo_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Crescendo_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		AAE55B8D20566BDB0030067D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				AAE55BA62056702F0030067D /* ViewController.swift */,
 				AAE55BA42056702C0030067D /* SongViewController.swift */,
 				AAE55BA2205670270030067D /* HomeController.swift */,
+				AABCE38920631243003755EA /* AttendanceController.swift */,
+				AABCE38B206323B5003755EA /* AddRehearsalModal.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -514,6 +520,8 @@
 				AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */,
 				AAE55BA72056702F0030067D /* ViewController.swift in Sources */,
 				AAE55BA1205670230030067D /* ChatController.swift in Sources */,
+				AABCE38C206323B5003755EA /* AddRehearsalModal.swift in Sources */,
+				AABCE38A20631243003755EA /* AttendanceController.swift in Sources */,
 				AAE55BA3205670280030067D /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
