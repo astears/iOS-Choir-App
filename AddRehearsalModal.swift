@@ -24,27 +24,17 @@ class AddRehearsalModal: UIViewController {
     @IBAction func addRehearsal(_ sender: Any) {
         
         // Add these times to Firebase as children under rehearsals node
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .medium
-        dateFormatter.timeStyle = .medium
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
         let ref = Database.database().reference()
-        let dateTime = dateFormatter.string(from: startDateTimePicker.date)
+        let dateTime = Double(startDateTimePicker.date.timeIntervalSince1970)
+        
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let date = dateFormatter.string(from: startDateTimePicker.date)
+        let key = dateFormatter.string(from: startDateTimePicker.date)
         let duration = durationPicker.countDownDuration.description
+
         
-//        let dateFormatterGet = DateFormatter()
-//        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss"
-//        let dateFormatterP = DateFormatter()
-//        dateFormatterP.dateFormat = "yyyy-MM-dd HH:mm"
-//        let datenew: Date? = dateFormatterGet.date(from: date)
-//        print(dateFormatterP.string(from: datenew!))
-        
-        // how do i add the values? what API call
-        
-        let childRef = ref.child("Rehearsals").child(date)
-        let values = ["dateTime": dateTime, "duration" : duration]
+        let childRef = ref.child("Rehearsals").child(key)
+        let values = ["dateTime": dateTime, "duration" : duration, "lat" : "37.785834", "lon" : "-122.406417"] as [String : Any]
         childRef.updateChildValues(values)
         dismiss(animated: true, completion: nil)
     }
