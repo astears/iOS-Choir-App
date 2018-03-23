@@ -54,8 +54,8 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alert = UIAlertController(title: "", message: "Select one.", preferredStyle: .actionSheet)
-        let firstAction = UIAlertAction(title: "Check In!", style: .default) { (alert: UIAlertAction!) -> Void in
+        let alert = UIAlertController(title: "", message: "Select one", preferredStyle: .actionSheet)
+        let firstAction = UIAlertAction(title: "Check In", style: .default) { (alert: UIAlertAction!) -> Void in
             
             let key = self.dates[indexPath.row]
             
@@ -74,7 +74,7 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
                         checkTime(timeDifference, key)
                     }
                     else {
-                        print("out of range")
+                        self.alertCheckIn("You current location doesn't match the rehearsal location")
                     }
                     
 
@@ -88,32 +88,58 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
             if (timeDifference >= -10 && timeDifference <= 10) {
                 //between 10 mins early and 10 mins late you can check in normal
                 print("normal")
-                let values = ["status" : "present"]
+                let values = ["status" : "On time"]
                 self.ref.child("Rehearsals").child(key).child("Attendance").child(userID).updateChildValues(values)
+                alertCheckIn("You are checked in as: On Time")
                 
             }
             else if (timeDifference > 10) {
                 // check in closed.. too early
-                print("too early")
+                alertCheckIn("Rehearsal hasn't started, try later!")
             }
             else if (timeDifference < -10 && timeDifference >= -30) {
                 // late
-                print("late")
-                let values = ["status" : "late"]
+                let values = ["status" : "Late"]
                 self.ref.child("Rehearsals").child(key).child("Attendance").child(userID).updateChildValues(values)
+                alertCheckIn("You are checked in as: Late")
             }
             else {
                 // check in closed.. too late
-                print("closed late")
+                alertCheckIn("Check in is now closed")
             }
         }
         
         let secondAction = UIAlertAction(title: "View Attendance", style: .default) { (alert: UIAlertAction!) -> Void in
+            self.performSegue(withIdentifier: "showDetails", sender: indexPath.row)
             NSLog("pressed view attendance")
         }
         
         alert.addAction(firstAction)
         alert.addAction(secondAction)
+        present(alert, animated: true, completion:nil)
+    }
+    
+    func getUsersName (_ uid : String) -> String {
+        var name : String = ""
+        ref.child("users").child(uid).observeSingleEvent(of: .value) { (snapshot) in
+            if let dictionary = snapshot.value as? [String : AnyObject] {
+                
+                name = dictionary["name"] as! String
+                print("closure returns \(name)")
+            }
+        }
+        print("func returns \(name)")
+        return name
+    }
+    
+    func alertCheckIn(_ message : String) {
+        let alert = UIAlertController(title: "Check In", message: message, preferredStyle: .alert)
+        let defaultAction = UIAlertAction(title: "OK", style: .default) { (alert: UIAlertAction!) -> Void in
+            NSLog("You pressed button OK")
+        }
+        
+        alert.addAction(defaultAction)
+        
         present(alert, animated: true, completion:nil)
     }
     
@@ -126,5 +152,14 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = String(dates[(indexPath as NSIndexPath).row])
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            let key = self.dates[sender as! Int]
+            let destVC = segue.destination as? AttendanceDetailViewController
+            destVC?.key = key
+            
+        }
     }
 }

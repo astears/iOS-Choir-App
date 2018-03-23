@@ -10,6 +10,7 @@
 		4EA7A7992665476ED14E7618 /* Pods_Crescendo_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8AD0D1EED03BD5A611CA90A /* Pods_Crescendo_iOSTests.framework */; };
 		7E4CEB2E7D8A76FC49F0560A /* Pods_Crescendo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */; };
 		AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77CF7D2061BD2B008552F6 /* SongInfo.swift */; };
+		AA7D399C20645DF60010ABFE /* AttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D399B20645DF60010ABFE /* AttendanceDetailViewController.swift */; };
 		AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = AA7DD7BD2054AE3A00F2C3CC /* Songs */; };
 		AAA012D620563BBD001319C3 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AAA012D520563BBD001319C3 /* Audio */; };
 		AABCE38A20631243003755EA /* AttendanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCE38920631243003755EA /* AttendanceController.swift */; };
@@ -56,6 +57,7 @@
 		68175F2A9FC97B08D3FA9B1F /* Pods-Crescendo_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOSTests/Pods-Crescendo_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AA77CF7D2061BD2B008552F6 /* SongInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfo.swift; sourceTree = "<group>"; };
+		AA7D399B20645DF60010ABFE /* AttendanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDetailViewController.swift; sourceTree = "<group>"; };
 		AA7DD7BD2054AE3A00F2C3CC /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
 		AAA012D520563BBD001319C3 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		AABCE38920631243003755EA /* AttendanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				AAE55BA2205670270030067D /* HomeController.swift */,
 				AABCE38920631243003755EA /* AttendanceController.swift */,
 				AABCE38B206323B5003755EA /* AddRehearsalModal.swift */,
+				AA7D399B20645DF60010ABFE /* AttendanceDetailViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				AAE55B9220566C350030067D /* AppDelegate.swift in Sources */,
 				AAE55B9620566C4B0030067D /* HelperExtensions.swift in Sources */,
 				AAE55B8E20566BDB0030067D /* Message.swift in Sources */,
+				AA7D399C20645DF60010ABFE /* AttendanceDetailViewController.swift in Sources */,
 				AAE55BA52056702C0030067D /* SongViewController.swift in Sources */,
 				AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */,
 				AAE55BA72056702F0030067D /* ViewController.swift in Sources */,

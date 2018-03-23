@@ -39,7 +39,6 @@ class AddRehearsalModal: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func closePopup(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
