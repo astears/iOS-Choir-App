@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let primaryColor = UIColor(red: 28/255, green: 181/255, blue: 224/255, alpha: 1)
     let secondaryColor = UIColor(red: 22/255, green: 134/255, blue: 166/255, alpha: 1)
     
+    @IBOutlet weak var loginImage: UIImageView!
     @IBOutlet weak var LoginButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -108,7 +109,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     print(err)
                     return
                 }
-
+                self.performSegue(withIdentifier: "Segue to home", sender: " ")
                 print("Saved user successfully into Firebase db")
 
             })

@@ -11,6 +11,8 @@
 		7E4CEB2E7D8A76FC49F0560A /* Pods_Crescendo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E67EC0911D0268A72F0FC81E /* Pods_Crescendo_iOS.framework */; };
 		AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA77CF7D2061BD2B008552F6 /* SongInfo.swift */; };
 		AA7D399C20645DF60010ABFE /* AttendanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D399B20645DF60010ABFE /* AttendanceDetailViewController.swift */; };
+		AA7D39A12064BF150010ABFE /* BulletinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7D39A02064BF140010ABFE /* BulletinTableViewCell.swift */; };
+		AA7D39A32064CDD60010ABFE /* LoginLogo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AA7D39A22064CDD60010ABFE /* LoginLogo.jpeg */; };
 		AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = AA7DD7BD2054AE3A00F2C3CC /* Songs */; };
 		AAA012D620563BBD001319C3 /* Audio in Resources */ = {isa = PBXBuildFile; fileRef = AAA012D520563BBD001319C3 /* Audio */; };
 		AABCE38A20631243003755EA /* AttendanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AABCE38920631243003755EA /* AttendanceController.swift */; };
@@ -58,6 +60,8 @@
 		86B603F60785DB46DA517388 /* Pods-Crescendo_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crescendo_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crescendo_iOS/Pods-Crescendo_iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AA77CF7D2061BD2B008552F6 /* SongInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfo.swift; sourceTree = "<group>"; };
 		AA7D399B20645DF60010ABFE /* AttendanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDetailViewController.swift; sourceTree = "<group>"; };
+		AA7D39A02064BF140010ABFE /* BulletinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinTableViewCell.swift; sourceTree = "<group>"; };
+		AA7D39A22064CDD60010ABFE /* LoginLogo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LoginLogo.jpeg; sourceTree = "<group>"; };
 		AA7DD7BD2054AE3A00F2C3CC /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
 		AAA012D520563BBD001319C3 /* Audio */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Audio; sourceTree = "<group>"; };
 		AABCE38920631243003755EA /* AttendanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 			children = (
 				AAE55B9F205670180030067D /* Controllers */,
 				AAE55B9120566C340030067D /* AppDelegate.swift */,
+				AA7D39A22064CDD60010ABFE /* LoginLogo.jpeg */,
 				AAE55B9320566C3E0030067D /* GoogleService-Info.plist */,
 				AAE55B8A20566B520030067D /* Main.storyboard */,
 				AAE55B9520566C4B0030067D /* HelperExtensions.swift */,
@@ -141,6 +146,7 @@
 				AAE55B9920566C6D0030067D /* Assets.xcassets */,
 				AAE55B9C20566DFE0030067D /* Info.plist */,
 				AA77CF7D2061BD2B008552F6 /* SongInfo.swift */,
+				AA7D39A02064BF140010ABFE /* BulletinTableViewCell.swift */,
 			);
 			name = Crescendo_iOS;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				AA7DD7BE2054AE3A00F2C3CC /* Songs in Resources */,
 				AAA012D620563BBD001319C3 /* Audio in Resources */,
 				AAE55B9A20566C6D0030067D /* Assets.xcassets in Resources */,
+				AA7D39A32064CDD60010ABFE /* LoginLogo.jpeg in Resources */,
 				AAE55B9820566C540030067D /* LaunchScreen.storyboard in Resources */,
 				AAE55B8B20566B520030067D /* Main.storyboard in Resources */,
 				AAE55B9420566C3E0030067D /* GoogleService-Info.plist in Resources */,
@@ -524,6 +531,7 @@
 				AA77CF7E2061BD2B008552F6 /* SongInfo.swift in Sources */,
 				AAE55BA72056702F0030067D /* ViewController.swift in Sources */,
 				AAE55BA1205670230030067D /* ChatController.swift in Sources */,
+				AA7D39A12064BF150010ABFE /* BulletinTableViewCell.swift in Sources */,
 				AABCE38C206323B5003755EA /* AddRehearsalModal.swift in Sources */,
 				AABCE38A20631243003755EA /* AttendanceController.swift in Sources */,
 				AAE55BA3205670280030067D /* HomeController.swift in Sources */,

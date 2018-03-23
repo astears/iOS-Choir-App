@@ -28,7 +28,7 @@ class AddRehearsalModal: UIViewController {
         let dateTime = Double(startDateTimePicker.date.timeIntervalSince1970)
         
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.dateFormat = "MMMM dd, h:mm a"
         let key = dateFormatter.string(from: startDateTimePicker.date)
         let duration = durationPicker.countDownDuration.description
 

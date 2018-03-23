@@ -48,12 +48,17 @@ class AttendanceDetailViewController: UIViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "attendanceCell")
         let name = attendees[(indexPath as NSIndexPath).row]
         cell.textLabel?.text = name
         cell.detailTextLabel?.text = attendanceDict[name]
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     @IBAction func handleBackButton(_ sender: Any) {

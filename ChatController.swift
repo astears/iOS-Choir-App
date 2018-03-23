@@ -30,6 +30,7 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 let accessCode = dictionary["code"] as! String
                 if (accessCode == "SM_2018") {
                     self.postView.isHidden = false
+                    self.hide = false
                 }
             }
         }
@@ -64,16 +65,24 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "messageCell")
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "messageCell")
         cell.textLabel?.lineBreakMode = .byWordWrapping
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.text = posts[indexPath.row].text
+        cell.textLabel?.text = posts[indexPath.row].text! + "\n"
+        //cell.detailTextLabel?.textAlignment = .right
+        cell.detailTextLabel?.text = "-" + (posts[indexPath.row].timestamp?.description)!
+        
+        //let timestamp = posts[indexPath.row].timestamp?.description
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
+        if (hide) {
+           return false
+        }
         return true
     }
     
@@ -88,6 +97,10 @@ class ChatController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     

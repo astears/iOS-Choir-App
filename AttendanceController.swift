@@ -53,7 +53,7 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: true)
         let alert = UIAlertController(title: "", message: "Select one", preferredStyle: .actionSheet)
         let firstAction = UIAlertAction(title: "Check In", style: .default) { (alert: UIAlertAction!) -> Void in
             
@@ -69,7 +69,6 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
                     let rehearsalTime = Date(timeIntervalSince1970: dateTime )
                     let timeDifference = Int(rehearsalTime.timeIntervalSinceNow) / 60
                     
-                    //negative means minutes late
                     if (lat == String(self.latitude!) && lon == String(self.longitude!)) {
                         checkTime(timeDifference, key)
                     }
@@ -77,7 +76,6 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
                         self.alertCheckIn("You current location doesn't match the rehearsal location")
                     }
                     
-
                 }
             }
             
@@ -85,6 +83,7 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
         
         func checkTime(_ timeDifference : Int, _ key : String) {
             let userID = Auth.auth().currentUser!.uid
+            //negative means minutes late
             if (timeDifference >= -10 && timeDifference <= 10) {
                 //between 10 mins early and 10 mins late you can check in normal
                 print("normal")
@@ -152,6 +151,19 @@ class AttendanceController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.textLabel?.text = String(dates[(indexPath as NSIndexPath).row])
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let key = dates[(indexPath as NSIndexPath).row]
+            ref.child("Rehearsals").child(key).removeValue()
+            dates.remove(at: (indexPath as NSIndexPath).row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+            // updatePersistentStorage()
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
